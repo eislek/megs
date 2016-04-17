@@ -33,7 +33,7 @@ class Album extends ArrayObject {
      * @return array|void
      */
     public function exchangeArray($data) {
-        foreach (['id', 'artist', 'title'] as $name) {
+        foreach (['id', 'artist', 'title', 'lastupdate'] as $name) {
             $this->$name = (!empty($data[ $name ]) ? $data[ $name ] : null);
         }
     }
