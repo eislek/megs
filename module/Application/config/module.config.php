@@ -19,7 +19,7 @@ return array(
                     'defaults' => array(
 //                        'controller' => 'Application\Controller\Index',
                         'controller' => 'Album\Controller\Album',
-                        'action'     => 'index',
+                        'action'     => 'add',
                     ),
                 ),
             ),
