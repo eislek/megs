@@ -43,7 +43,8 @@ class AlbumTable {
     public function saveAlbum(Album $album) {
         $data = [
             'artist' => $album->artist,
-            'title' => $album->title
+            'title' => $album->title,
+            'lastupdate' => date(DATE_RFC3339)
         ];
 
         $id = (int) $album->id;
