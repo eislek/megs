@@ -22,12 +22,12 @@ class AlbumTable {
     }
 
     /**
+     * @param $selectFunc
+     *
      * @return \Zend\Db\ResultSet\ResultSet
      */
-    public function fetchAll() {
-        return $this->tableGateway->select(function($select) {
-            $select->order('title ASC');
-        });
+    public function fetchAll($selectFunc = null) {
+        return $this->tableGateway->select($selectFunc);
     }
 
     public function getAlbum($id) {

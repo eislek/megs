@@ -27,7 +27,9 @@ class AlbumController extends AbstractActionController {
 
     public function indexAction() {
         return new ViewModel([
-                                 'albums' => $this->getAlbumTable()->fetchAll()
+                                 'albums' => $this->getAlbumTable()->fetchAll(function ($select) {
+                                     $select->order('title ASC');
+                                 })
                              ]);
     }
 

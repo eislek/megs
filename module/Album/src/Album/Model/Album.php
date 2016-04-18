@@ -33,6 +33,8 @@ class Album extends ArrayObject {
      * @return array|void
      */
     public function exchangeArray($data) {
+        parent::exchangeArray($data);
+
         foreach (['id', 'artist', 'title', 'lastupdate'] as $name) {
             $this->$name = (!empty($data[ $name ]) ? $data[ $name ] : null);
         }
