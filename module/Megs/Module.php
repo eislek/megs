@@ -1,4 +1,4 @@
-<?php namespace Erinnerung;
+<?php namespace Megs;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;

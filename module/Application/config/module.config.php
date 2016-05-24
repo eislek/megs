@@ -18,7 +18,7 @@ return array(
                     'route'    => '/',
                     'defaults' => array(
 //                        'controller' => 'Application\Controller\Index',
-                        'controller' => 'Album\Controller\Album',
+                        'controller' => 'Megs\Controller\Erinnerung',
                         'action'     => 'add',
                     ),
                 ),
