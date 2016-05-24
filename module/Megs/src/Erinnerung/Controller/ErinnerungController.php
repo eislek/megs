@@ -1,11 +1,14 @@
 <?php namespace Erinnerung\Controller;
-/**
- * Created by PhpStorm.
- * User: ESMYM
- * Date: 24.05.16
- * Time: 14:20
- */
 
-class AlbumController extends AbstractActionController
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class ErinnerungController extends AbstractActionController
 {
+
+    public function indexAction(){}
+    public function addAction(){}
+    public function deleteAction(){}
+    public function editAction(){}
+    public function getAction(){}
 }

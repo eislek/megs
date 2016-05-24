@@ -1,7 +1,12 @@
-<?php namespace Erinnerung\Controller;/**
-/**
- * Created by PhpStorm.
- * User: ESMYM
- * Date: 24.05.16
- * Time: 14:21
- */
+<?php namespace Erinnerung\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class LogController extends AbstractActionController
+{
+
+    public function indexAction(){}
+    public function addAction(){}
+    public function getAction(){}
+}

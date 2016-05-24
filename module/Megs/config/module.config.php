@@ -20,13 +20,13 @@ return [
             'album' => [
                 'type' => 'segment',
                 'options' => [
-                    'route' => '/album[/:action][/:id]',
+                    'route' => '/megs[/:action][/:id]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller' => 'Album\Controller\Album',
+                        'controller' => 'Megs\Controller\Erinnerung',
                         'action' => 'index'
                     ]
                 ]
