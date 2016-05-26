@@ -3,21 +3,21 @@
 return [
     'controllers' => [
         'invokables' => [
-            'Megs\Controller\Erinnerung' => Erinnerung\Controller\ErinnerungController::class,
-            'Megs\Controller\Erinnerung' => Erinnerung\Controller\BenutzerController::class,
-            'Megs\Controller\Erinnerung' => Erinnerung\Controller\BlacklistController::class,
-            'Megs\Controller\Erinnerung' => Erinnerung\Controller\LogController::class
+            'Megs\Controller\Erinnerung' => Megs\Controller\ErinnerungController::class,
+            'Megs\Controller\Benutzer' => Megs\Controller\BenutzerController::class,
+            'Megs\Controller\Blacklist' => Megs\Controller\BlacklistController::class,
+            'Megs\Controller\Log' => Megs\Controller\LogController::class
         ]
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'album' => __DIR__ . '/../view'
+            'megs' => __DIR__ . '/../view'
         ]
     ],
 
     'router' => [
         'routes' => [
-            'album' => [
+            'megs' => [
                 'type' => 'segment',
                 'options' => [
                     'route' => '/megs[/:action][/:id]',
@@ -26,7 +26,7 @@ return [
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller' => 'Megs\Controller\Erinnerung',
+                        'controller' => 'Megs\Controller\Megs',
                         'action' => 'index'
                     ]
                 ]

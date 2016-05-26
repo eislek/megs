@@ -1,4 +1,4 @@
-<?php namespace Erinnerung\Controller;
+<?php namespace Megs\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
