@@ -11,7 +11,7 @@ return [
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'megs' => __DIR__ . '/../view'
+            'erinnerung' => __DIR__ . '/../view'
         ]
     ],
 
@@ -26,7 +26,7 @@ return [
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller' => 'Megs\Controller\Megs',
+                        'controller' => 'Megs\Controller\Erinnerung',
                         'action' => 'index'
                     ]
                 ]
