@@ -33,7 +33,7 @@ class Module implements AutoloaderProviderInterface, ConfigProviderInterface {
     public function getServiceConfig() {
         return [
             'factories' => [
-                'Megs\Model\ErinnerungTable' => function(ServiceManager $sm) {
+                'Test\Model\ErinnerungTable' => function(ServiceManager $sm) {
                     /** @var TableGateway $tableGateway */
                     $tableGateway = $sm->get('ErinnerungTableGateway');
                     $table = new ErinnerungTable($tableGateway);

@@ -38,12 +38,7 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Startseite') ?></a></li>
-                        <li class=""><a href="<?php echo $this->url('megs') ?>"><?php echo $this->translate('Megs schreiben') ?></a></li>
-                        <li class=""><a href="<?php echo $this->url('megs') ?>"><?php echo $this->translate('Gesendete Erinnerungen') ?></a></li>
-                        <li class=""><a href="<?php echo $this->url('megs') ?>"><?php echo $this->translate('Entwürfe') ?></a></li>
-                        <li class=""><a href="<?php echo $this->url('megs') ?>"><?php echo $this->translate('Papierkorb') ?></a></li>
-
+                        <li class=""><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('HOME') ?></a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -52,7 +47,9 @@
             <?php echo $this->content; ?>
             <hr>
             <footer>
+                <div class = "farbe">
                 <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                </div>
             </footer>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>

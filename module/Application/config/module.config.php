@@ -18,8 +18,8 @@ return array(
                     'route'    => '/',
                     'defaults' => array(
 //                        'controller' => 'Application\Controller\Index',
-                        'controller' => 'Megs\Controller\Erinnerung',
-                        'action'     => 'add',
+                        'controller' => 'Erinnerung\Controller\Erinnerung',
+                        'action'     => 'index',
                     ),
                 ),
             ),

@@ -3,15 +3,15 @@
 return [
     'controllers' => [
         'invokables' => [
-            'Megs\Controller\Erinnerung' => Megs\Controller\ErinnerungController::class,
-            'Megs\Controller\Benutzer' => Megs\Controller\BenutzerController::class,
-            'Megs\Controller\Blacklist' => Megs\Controller\BlacklistController::class,
-            'Megs\Controller\Log' => Megs\Controller\LogController::class
+            'Test\Controller\Erinnerung' => Megs\Controller\ErinnerungController::class,
+            'Test\Controller\Benutzer'   => Megs\Controller\BenutzerController::class,
+            'Test\Controller\Blacklist'  => Megs\Controller\BlacklistController::class,
+            'Test\Controller\Log'        => Megs\Controller\LogController::class
         ]
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'erinnerung' => __DIR__ . '/../view'
+            'megs' => __DIR__ . '/../view'
         ]
     ],
 
@@ -26,7 +26,7 @@ return [
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller' => 'Megs\Controller\Erinnerung',
+                        'controller' => 'Test\Controller\Erinnerung',
                         'action' => 'index'
                     ]
                 ]
