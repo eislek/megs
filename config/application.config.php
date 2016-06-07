@@ -12,7 +12,7 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'CsnUser',
-        //'Erinnerung',
+        'Erinnerung',
         //'Benutzer',
         //'Log',
         //'Blacklist'

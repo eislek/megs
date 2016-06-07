@@ -14,8 +14,10 @@
 return [
     'db' => [
         'driver' => 'Pdo',
-        'dsn' => 'sqlite:'.__DIR__.'/../../data/database.sqlite',
-        'driver_options' => []
+        'dsn' => 'mysql:dbname=megs;host=localhost',
+        'driver_options' => [
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+        ]
     ],
     'service_manager' => [
         'factories' => [

@@ -18,7 +18,7 @@ return array(
                     'route'    => '/',
                     'defaults' => array(
 //                        'controller' => 'Application\Controller\Index',
-                        'controller' => 'Erinnerung\Controller\Erinnerung',
+                        'controller' => 'CsnUser\Controller\IndexController',
                         'action'     => 'index',
                     ),
                 ),
@@ -69,8 +69,9 @@ return array(
         'translation_file_patterns' => array(
             array(
                 'type'     => 'gettext',
-                'base_dir' => __DIR__ . '/../language',
+                'base_dir' => __DIR__ . '/../../CsnUser/language',
                 'pattern'  => '%s.mo',
+                'text_domain' => 'csnuser',
             ),
         ),
     ),
