@@ -27,7 +27,7 @@ return array(
          * Accepted values: A valid route name within your application
          *
          */
-        'login_redirect_route' => 'user',
+        'login_redirect_route' => 'erinnerung',
 
         /**
          * Login Redirect Route Options

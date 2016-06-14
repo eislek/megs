@@ -17,15 +17,15 @@ return array(
          * 
          * Defaults to false.
          */
-        'use_database_storage' => true,
+        'use_database_storage' => false,
         /**
          * The route where users are redirected if access is denied.
          * Set to empty array to disable redirection.
          */
         'redirect_route' => array(
             'params' => array(
-                //'controller' => 'my_controllet',
-                //'action' => 'my_action',
+                'controller' => 'user',
+                'action' => 'login',
                 //'id' => '1',
             ),
             'options' => array(
@@ -38,7 +38,7 @@ return array(
 				// The CsnAuthorisation trys to redirect to not accessable action loginAction and it gets redirected back to it.
 				// Much better is to redirect to an action for sure accessable from everyone and there is no better candidate than the homepage
 				// the landing page for the requests to the domain.
-                'name' => 'home', // 'login', 
+                'name' => 'login', // 'login',
             ),
         ),
         /**
@@ -60,6 +60,12 @@ return array(
 					'forgottenPassword' => 'guest',
 					'confirmEmail' => 'guest',
 					'registrationSuccess' => 'guest',
+				),
+				'Erinnerung\Controller\Erinnerung' => array(
+					'add' => 'member',
+					'delete' => 'member',
+					'edit' => 'member',
+					'index' => 'member'
 				),
 				'CsnUser\Controller\Index' => array(
 					'login'   => 'guest',
@@ -103,10 +109,6 @@ return array(
 				),
 				'Application\Controller\Index' => array(
 					'index'   => 'guest',
-				),
-				// for CMS articles
-                                'all' => array(
-					'view'	=> 'guest',					
 				),
 				'Public Resource' => array(
 					'view'	=> 'guest',					
