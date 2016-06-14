@@ -12,6 +12,7 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'CsnUser',
+        //<'CsnAuthorization',
         'Erinnerung',
         //'Benutzer',
         //'Log',

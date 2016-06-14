@@ -7,9 +7,11 @@
         "zf2"
     ],
     "homepage": "http://framework.zend.com/",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5",
         "zendframework/zendframework": "~2.5",
-        "coolcsn/csn-user": "0.1.0"
+        "coolcsn/csn-user": "0.1.0",
+        "coolcsn/csn-authorization": "dev-master"
     }
 }
